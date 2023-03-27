@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pip = "*"
+install = "*"
+unstructured = {extras = ["local-inference"], version = "*"}
+langchain = "*"
+openai = "*"
+detectron2 = {ref = "v0.6", git = "https://github.com/facebookresearch/detectron2.git"}
+tiktoken = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
